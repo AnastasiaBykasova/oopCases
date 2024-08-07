@@ -2,7 +2,9 @@ package abstraction;
 
 public class Dog extends Animal {
     @Override
-    public void makeSound() {
-        System.out.println("Bark!");
+    public Object makeSound() {
+        String string = "Bark!";
+        System.out.println(string);
+        return string;
     }
 }

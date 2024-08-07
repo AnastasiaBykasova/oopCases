@@ -2,10 +2,12 @@ package abstraction;
 
 // абстрактный класс, представляющий всех животных
 abstract class Animal {
-    public void eat() {
-        System.out.println("The animal is eating.");
+    public Object eat() {
+        String string = "The animal is eating.";
+        System.out.println(string);
+        return string;
     }
 
     // абстрактный метод, который должен быть реализован в каждом подклассе
-    public abstract void makeSound();
+    public abstract Object makeSound();
 }

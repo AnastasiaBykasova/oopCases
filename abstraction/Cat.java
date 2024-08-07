@@ -2,12 +2,16 @@ package abstraction;
 
 public class Cat extends Animal {
     @Override
-    public void makeSound() {
-        System.out.println("Meow!");
+    public Object makeSound() {
+        String string = "Meow!";
+        System.out.println(string);
+        return string;
     }
 
     @Override
-    public void eat() {
-        System.out.println("Cat is eating fish");
+    public Object eat() {
+        String string = "Cat is eating fish";
+        System.out.println(string);
+        return string;
     }
 }
